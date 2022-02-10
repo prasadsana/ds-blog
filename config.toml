@@ -15,14 +15,15 @@ DefaultContentLanguage           = "en"                    # Default language fo
     # customCSS                  = ["foo.css"]             # Include custom css files placed under assets/
     # customJS                   = ["foo.js"]              # Include custom JavaScript files placed under assets/
     # plausible                  = true                    # Use Plausible analytics (requires an account at Plausible.io)
+    include_toc                  = true
 
     # Configure the home page
     [params.home]
-        introHeight              = "fullheight"            # Input either "medium" or "large" or "fullheight"
+        introHeight              = "medium"            # Input either "medium" or "large" or "fullheight"
         showLatest               = true                    # Show latest blog post summary
         showAllPosts             = false                   # Set true to list all posts on home page, or set false to link to separate blog list page
         allPostsArchiveFormat    = true                    # show all posts in an archive format
-        numberOfProjectsToShow   = 3                       # Maximum number of projects to show on home page. Unset or comment out to show all projects
+        numberOfProjectsToShow   = 5                       # Maximum number of projects to show on home page. Unset or comment out to show all projects
         localTime                = true                    # Show your current local time in contact section
         timeZone                 = "Asia/Calcutta"   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
         timeFormat               = "en-US"                 # Language specific format to use
@@ -91,7 +92,8 @@ DefaultContentLanguage           = "en"                    # Default language fo
 # You can add more by yourself
 [taxonomies]
   tag = "tags"
-  series = "series"
+  category = 'categories'
+  series = 'series'
 
 [markup]
   defaultMarkdownHandler = "goldmark"
