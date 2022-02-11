@@ -16,6 +16,7 @@ DefaultContentLanguage           = "en"                    # Default language fo
     # customJS                   = ["foo.js"]              # Include custom JavaScript files placed under assets/
     # plausible                  = true                    # Use Plausible analytics (requires an account at Plausible.io)
     include_toc                  = true
+    
 
     # Configure the home page
     [params.home]
@@ -94,6 +95,17 @@ DefaultContentLanguage           = "en"                    # Default language fo
   tag = "tags"
   category = 'categories'
   series = 'series'
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+[[related.indices]]
+  name = 'tags'
+  weight = 10
+[[related.indices]]
+  name = 'categories'
+  weight = 100
 
 [markup]
   defaultMarkdownHandler = "goldmark"
