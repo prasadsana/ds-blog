@@ -1,6 +1,7 @@
 ---
 title: "FirstPost"
 description: "this is a first trail post after bulding the blog"
+summary: "this is a first trail post after bulding the blog"
 date: 2022-02-09T20:17:04+05:30
 keywords:
 - firstpost
@@ -10,7 +11,7 @@ tags:
 - trial
 categories:
 - cat
-include_toc: true
+toc: true
 draft: false
 ---
 
