@@ -2,3 +2,11 @@
     position: absolute;
     right: 0px;
 }
+
+.section {
+    padding: 1rem;
+}
+
+.top-pad {
+    padding-top: 2rem;
+}
