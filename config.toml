@@ -9,7 +9,7 @@ disqusshortname                  = "prasadsana"                     # https://go
     favicon                      = "/img/fav.ico"          # Path to favicon file
     showRSSButton                = false                   # Show rss button in navigation
     fadeIn                       = false                    # Turn on/off the fade-in effect
-    fadeInIndex                  = true                   # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
+    fadeInIndex                  = false                   # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
     dateFormat                   = "Jan 2, 2006"
     email                        = "sanaprasad23@gmail.com"   # E-mail address for contact section
     customCSS                    = ["mycss.css"]             # Include custom css files placed under assets/
@@ -82,24 +82,27 @@ disqusshortname                  = "prasadsana"                     # https://go
 
 # If you don't want to use the default menu, you can define one by yourself
 [[menu.main]]
-    name    = "Home"
+    name    = "home"
     url     = "/"
     weight  = 1
 [[menu.main]]
-    name    = "Blog"
+    name    = "blog"
     url     = "/blog/"
     weight  = 2
 [[menu.main]]
-    name    = "About"
+    name    = "about"
     url     = "/about/"
     weight  = 3
+[[menu.main]]
+    name    = "github"
+    url     = "https://github.com/prasadsana"
+    weight  = 4
 
 # We only use tag as a taxonomies
 # You can add more by yourself
 [taxonomies]
   tag = "tags"
   category = 'categories'
-  series = 'series'
 
 [related]
   includeNewer = true

@@ -2,6 +2,7 @@
 title: "About"
 image: "prasadsana.jpg"
 weight: 8
+date: 2022-02-10T20:17:04+05:30
 ---
 
 This is **Introduction**, a minimalist website theme made for [Hugo](https://gohugo.io).

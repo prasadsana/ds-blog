@@ -1,8 +1,9 @@
 <!-- Begin Nav bar -->
-<div class="container">
+<div class="container" id="navContainer">
     <nav class="navbar" role="navigation" aria-label="main navigation">
         {{ $isHome := .Page.IsHome }}
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+          <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -12,7 +13,7 @@
             {{ if .Site.Menus.main }}
             {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
-            <a class="navbar-item"  href="{{ .URL }}">
+            <a class="navbar-item strong"  href="{{ .URL }}">
                 {{ .Pre }}
                 {{ .Name }}
                 {{ .Post }}
@@ -34,6 +35,7 @@
             {{ end }}
             {{ end }}
             {{ else }}
+
             <!-- use default menu -->
             {{ if not $isHome }}
             <a class="navbar-item" href="{{ "" | relLangURL }}">{{ i18n "nav_main" . }}</a>

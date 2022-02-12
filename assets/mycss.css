@@ -1,3 +1,10 @@
+html {
+    --content-width: 60rem;
+    --content-margin: 1.5rem;
+    --content-padding: 1.5rem;
+    --item-margin: 0;
+}
+
 .toc {
     position: absolute;
     right: 0px;
@@ -9,4 +16,19 @@
 
 .top-pad {
     padding-top: 2rem;
+}
+
+#navContainer {
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+.navSection {
+    padding: 0;
+}
+
+.navbar-item {
+    min-width: 6rem;
+    color: #000000;
+    font-weight: bold;
 }
